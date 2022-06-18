@@ -11,11 +11,15 @@
 #TabsToolbar {
   margin-left: 50vw !important;
   height: 38px !important;
-  padding-top: 1px !important;
+  /* padding-top: 1px !important; */
 }
 
 #PersonalToolbar {
   padding: 0 6px 5px !important;
+}
+
+#PanelUI-menu-button {
+  fill: white !important;
 }
 
 :root[sizemode="fullscreen"] #nav-bar {
@@ -92,9 +96,9 @@
 .tab-background {
   margin: 6px 3px !important;
   border-radius: var(--toolbarbutton-border-radius) !important;
-  background-image: none !important;
+  /* background-image: none !important;
   background-color: rgba(255,255,255,0) !important;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2) !important;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2) !important; */
 }
 
 #tabbrowser-tabs:not([movingtab]) > .tabbrowser-arrowscrollbox > 
@@ -104,19 +108,19 @@
 .tabbrowser-tab > .tab-stack > 
 .tab-background[selected="true"]:-moz-lwtheme,
 .tabbrowser-tab:hover > .tab-stack > 
-.tab-background:not([selected="true"]):not([multiselected]) {
+/* .tab-background:not([selected="true"]):not([multiselected]) {
   background-color: rgba(255,255,255,0.1) !important;
-}
+} */
 
 #urlbar-container {
   min-width: calc(150px + 24px + 2 * var(--toolbarbutton-inner-padding)) !important;
 }
 
-#urlbar-background {
+/* #urlbar-background {
   background-color: rgba(255,255,255,0.1) !important;
   border: none !important;
   box-shadow: 0 0 5px rgba(0,0,0,0.2) !important;
-}
+} */
 
 .urlbarView-body-inner {
   border-top: none !important;
@@ -145,14 +149,10 @@
   width: 100% !important;
 }
 
-#TabsToolbar, #nav-bar, #PersonalToolbar, #urlbar {
-  -moz-appearance: -moz-mac-vibrancy-dark !important;
-}
-
 :root {
   --chrome-content-separator-color: none !important;
   --lwt-toolbar-field-border-color: rgba(255,255,255,0.2) !important;
-  --tabs-border: transparent !important;
+  /* --tabs-border: transparent !important; */
   --toolbar-field-focus-border-color: none !important;
   --toolbarbutton-border-radius: 4px !important;
   --urlbar-separator-color: var(--lwt-toolbar-field-border-color) !important;
